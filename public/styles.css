@@ -1,4 +1,27 @@
+:root {
+  --primaryColor: #f63e34;
+  --primaryColorActivated: #c33129;
+  --secondaryColor: #b7b7b7;
+  --dangerColor: #dc3545;
+  --text: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body,
+input {
+  color: var(--text);
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+#root {
+  display: flex;
+}
+
+.backdrop {
+  height: 100vh;
+  width: 60vw;
 }/*# sourceMappingURL=styles.css.map */
