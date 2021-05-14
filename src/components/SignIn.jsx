@@ -3,7 +3,7 @@ import EmailSignIn from "./EmailSignIn"
 
 const SignIn = () =>{
     return (
-        <div>
+        <div className="sign-in">
             <h1>Sign up to begin your adventure</h1>
             <p>Already a member? <a href="/">Login instead</a></p>
             <GoogleSignIn/>

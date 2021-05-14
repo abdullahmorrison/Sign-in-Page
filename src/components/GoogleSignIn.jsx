@@ -2,7 +2,7 @@ import GoogleLogo from "./images/GoogleLogo"
 
 const GoogleSignIn = () =>{
     return(
-        <button>
+        <button id="google-button">
             <GoogleLogo alt="google logo"/>
             Continue with Google
         </button>
