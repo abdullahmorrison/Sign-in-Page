@@ -18,6 +18,14 @@ input {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
+h1 {
+  font-size: 1.2em;
+}
+
+a {
+  color: var(--primaryColor);
+}
+
 input {
   border-radius: 5px;
   padding: 10px 10px;
@@ -27,13 +35,24 @@ input {
   display: flex;
 }
 
+.image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 .image__backdrop {
   height: 100vh;
   width: 65vw;
 }
+.image__outstem {
+  position: absolute;
+  top: 85vh;
+  left: 1vw;
+  width: 5vw;
+}
 
 .sign-in {
-  padding: 20px 50px;
+  padding: 50px;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -44,13 +63,66 @@ input {
 }
 .sign-in__email input {
   margin-bottom: 20px;
+  border: 1px solid var(--secondaryColor);
 }
-
-#google-button {
+.sign-in__email input:focus {
+  outline: none;
+  border: 1px solid var(--primaryColorActivated);
+}
+.sign-in__email input[type=submit]:active {
+  background-color: var(--primaryColorActivated);
+}
+.sign-in #google-button {
+  background: none;
   border-radius: 5px;
   margin: 20px 0;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sign-in #google-button:hover {
+  background-color: var(--secondaryColor);
+}
+
+button,
+input[type=submit] {
+  color: inherit;
+  border: 1px solid var(--secondaryColor);
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: var(--primaryColor);
+}
+
+@media screen and (max-width: 1000px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-in {
+    background-color: white;
+    position: absolute;
+  }
+
+  .image__backdrop {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sign-in {
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
