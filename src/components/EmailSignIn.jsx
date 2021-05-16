@@ -5,7 +5,7 @@ const EmailSignIn = () =>{
             <input type="email" required/>
 
             <label>Password (min. 8 characters)</label>
-            <input type="password" required/>
+            <input type="password" minLength="8" required/>
 
             <div>
                 <input type="checkbox" required/>
